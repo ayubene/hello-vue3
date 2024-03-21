@@ -2,18 +2,18 @@
     <div class="app">
         <h2>vue route test</h2>
         <div class="nav">
-            <a href="#" class="active">新闻</a>
-            <a href="#">关于</a>
-            <a href="#">首页</a>
+            <RouterLink to="/home" active-class="active">首页</RouterLink>
+            <RouterLink to="/about" active-class="active">关于</RouterLink>
+            <RouterLink to="/news" active-class="active">新闻</RouterLink>
         </div>
         <div class="content">
-            展示各种根据路由路径得到的不同组件
+            <RouterView></RouterView>
         </div>
     </div>
 </template>
 
 <script lang="ts" setup name="App">
-    import { ref } from 'vue'
+    import { RouterView,RouterLink } from 'vue-router'
 </script>
 
 <style>
