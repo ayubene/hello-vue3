@@ -1,10 +1,10 @@
 <template>
     <div class="app">
-        <h2>vue route test</h2>
+        <Header/>
         <div class="nav">
-            <RouterLink to="/home" active-class="active">首页</RouterLink>
-            <RouterLink to="/about" active-class="active">关于</RouterLink>
-            <RouterLink to="/news" active-class="active">新闻</RouterLink>
+            <RouterLink replace to="/home" active-class="active">首页</RouterLink>
+            <RouterLink replace :to="{ name:'/nameAbout' }" active-class="active">关于</RouterLink>
+            <RouterLink replace :to="{ path:'/news' }" active-class="active">新闻</RouterLink>
         </div>
         <div class="content">
             <RouterView></RouterView>
@@ -14,6 +14,7 @@
 
 <script lang="ts" setup name="App">
     import { RouterView,RouterLink } from 'vue-router'
+    import Header from './components/Header.vue'
 </script>
 
 <style>
@@ -53,5 +54,18 @@
         margin: 20px;
         border: 1px solid rgb(160, 159, 159);
         height: 300px;
+        display: flex;
+        align-items: center;
+    }
+
+    .content a {
+        text-decoration: none;
+        color: rgb(66, 104, 66);
+        font-weight: 00;
+        font-size: 16px;
+    }
+
+    .content a::marker {
+        color: rgb(66, 104, 66);
     }
 </style>

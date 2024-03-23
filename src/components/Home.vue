@@ -1,3 +1,0 @@
-<template>
-    aaaaaaa
-</template>
