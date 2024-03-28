@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-xs-3 col-md-3 col-lg-3 col-xl-3">
                 <!-- 导航区 -->
-                <router-link  to="/props">1 props</router-link>
+                <router-link to="/props">1 props</router-link>
             </div>
             <div class="col-xs-9 col-md-9 col-lg-9 col-xl-9">
 				<div class="panel-body">

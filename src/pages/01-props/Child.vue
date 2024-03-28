@@ -1,8 +1,19 @@
 <template>
     <div class="child">
         <h3>child</h3>
+		<h3>car from parent: {{ car }}</h3>
+		<button @click="sendToy(toy)">sendToy</button>
     </div>
 </template>
+
+<script setup>
+	import { ref } from 'vue';
+	import { defineProps } from 'vue';
+	defineProps(['car','sendToy'])
+
+	let toy = ref('a bear')
+</script>
+
 <style scoped>
 	.child{
 		background-color: skyblue;
