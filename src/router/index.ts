@@ -5,6 +5,8 @@ import CustomEvent from '@/pages/02-custom-event/Parent.vue'
 import Mitt from '@/pages/03-mitt/Parent.vue'
 import Vmodel from '@/pages/04-v-model/Parent.vue'
 import Attrs from '@/pages/05-attrs/Parent.vue'
+import Refs from '@/pages/06-refs-parent/Parent.vue'
+import Provide from '@/pages/07-provide-inject/Parent.vue'
 
 
 export default createRouter({
@@ -29,6 +31,14 @@ export default createRouter({
         {
             path: '/attrs',
             component: Attrs
+        },
+        {
+            path: '/refs',
+            component: Refs
+        },
+        {
+            path: '/provide',
+            component: Provide
         },
     ]
 })
