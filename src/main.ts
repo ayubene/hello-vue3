@@ -1,3 +1,5 @@
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 // 引入createApp创建应用
 import { createApp } from "vue";
 //  引入APP根组件
@@ -13,7 +15,8 @@ const app = createApp(App)
 const pinia = createPinia()
 // 使用路由器
 app.use(router)
-
+// 使用element-plus
+app.use(ElementPlus)
 // 安装pinia
 app.use(pinia)
 // 挂载应用到app容器

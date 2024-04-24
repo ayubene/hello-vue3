@@ -1,13 +1,18 @@
 <template>
     <div class="child">
         <h3>child</h3>
-		<Grandchild v-bind="$attrs"/>
+		<!-- <Grandchild v-bind="$attrs"/> -->
+		<el-button :="$attrs"></el-button>
     </div>
 </template>
 
 <script setup name="Child">
 	import Grandchild from './Grandchild.vue';
 	defineProps([''])
+
+	import { useAttrs } from 'vue';
+	let $attrs = useAttrs()
+	console.log($attrs);
 </script>
 
 <style scoped>

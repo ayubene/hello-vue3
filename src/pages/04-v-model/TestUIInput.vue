@@ -5,7 +5,7 @@
 
 <script setup lang="ts" name="TestUIInput">
 	import { ref } from 'vue';
-    defineProps(['uName','pwd'])
+    const props = defineProps(['uName','pwd'])
     const emit = defineEmits(['update:uName','update:pwd'])
 </script>
 
