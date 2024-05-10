@@ -5,6 +5,7 @@
 		<button @click="changeToy">change toy</button>
 		<button @click="changeComputer">change computer</button>
 		<button @click="addBook($refs)">add book</button>
+		<!-- 用ref拿到child组件实例，但是需要子组件使用defineExpose将数据暴露出来 -->
 		<Child1 ref="c1"/>
 		<Child2 ref="c2"/>
 		
