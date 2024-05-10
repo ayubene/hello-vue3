@@ -1,3 +1,5 @@
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 // 引入createApp创建应用
 import { createApp } from "vue";
 //  引入APP根组件
